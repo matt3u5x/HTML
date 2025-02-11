@@ -1,0 +1,195 @@
+/* Resetando alguns estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo do documento */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f2e7; /* Marrom Claro Pastel */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #3a5a40; /* Verde Escuro Fosco */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+/* Navegação */
+nav {
+    background-color: #456c50; /* Verde Escuro Fosco */
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    background-color: #6e8c6d; /* Verde Claro Fosco */
+    color: #fff;
+}
+
+/* Seções */
+section {
+    padding: 80px 0;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #3a5a40; /* Verde Escuro Fosco */
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Containers */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Habilidades */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.skill {
+    background-color: #f5f2e7; /* Marrom Claro Pastel */
+    padding: 30px;
+    border-radius: 10px;
+    width: 22%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-10px);
+}
+
+.skill h3 {
+    font-size: 1.6rem;
+    color: #456c50; /* Verde Escuro Fosco */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.skill p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Projetos */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.project {
+    background-color: #f5f2e7; /* Marrom Claro Pastel */
+    padding: 25px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project h3 {
+    font-size: 1.7rem;
+    color: #456c50; /* Verde Escuro Fosco */
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Link de Contato */
+a {
+    color: #3a5a40; /* Verde Escuro Fosco */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #456c50; /* Verde Claro Fosco */
+}
+
+/* Rodapé */
+footer {
+    background-color: #3a5a40; /* Verde Escuro Fosco */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .skills, .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill, .project {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
